@@ -5,10 +5,14 @@ const number1 = prompt(parseInt("First number:"));
 const number2 = prompt(parseInt("Second number:"));
 const number3 = prompt(parseInt("Third number:"));
 
-function add(number1, number2) { return number1 + number2; };
-add(1, 2);
+function add(number1, number2)
+  {
+    return additionResult = number1 + number2;
+  };
+
 function multiplication(number1, number2) { return number1 * number2; };
-add(1, 2);
+
+
 
 const subtraction = alert("Please two numbers to subtract:")
 let subtractionResult = alert("Hi inputtedName, the difference is " + subtractionResult(number1 - number2) + ", have a great day!");
