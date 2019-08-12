@@ -31,12 +31,12 @@ function add(number1, number2) { return number1 + number2; };
 function add(number1, number2) { return number1 + number2; };
 
 // front end display
-document.ready(function({
+$(function(){
   //jQuery().click(functon()
   $("p").(functon()
   {
-
-    $(".subtraction").function(threeTimes){ return result;}
+    $(".subtraction").function(threeTimes){  return result;}
+    $(".threeTimes").function(threeTimes){ return result;}
     alert("Result is: " + result);
   });
 });
