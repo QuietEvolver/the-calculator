@@ -2,17 +2,40 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
+        <script src="js/jquery-3.4.1.js" charset="utf-8"></script>
+        <script src="js/script.js" type="text/javascript"></script>
     <title>THE CALCULATOR</title>
   </head>
   <body>
     <h1>The Calculator</h1>
     <main>
       <section class="threeTimes">
-        <p>3x Result is $("threeTimes")</p>
+      </section>
+
+      <section class="calculator">
+
+        <input id="number1" type="text" name="number1" value="">
+        <input id="number2" type="text" name="number2" value="">
+
+        <p>Addition = "Please two numbers to add:"</p>
+        <button id="additionButton" type="button" name="button">Add</button>
+        <p id="addition">additionResult: </p>
+
+        <p>Division = "Please two numbers to subtract:"</p>
+        <button id="subtractButton" type="button" name="button">Subtract</button>
+        <p id="subtraction">subtractionResult: </p>
+
+        <p>multiplication = "Please two numbers to multiplication:"</p>
+        <button id="multiplicationButton" type="button" name="button">multiplication</button>
+        <p id="multiplication">multiplicationResult: </p>
+
+        <p>Division = "Please two numbers to divide:"</p>
+        <button id="divideButton" type="button" name="button">divide</button>
+        <p id="division">divisionResult: </p>
+
       </section>
     </main>
 
-    <script src="js/jquery-3.4.1" charset="utf-8"></script>
-    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>
