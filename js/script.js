@@ -4,49 +4,37 @@ $(document).ready(function(){
 // const number2 = parseInt(prompt("Second number:"));
 // const number3 = parseInt(prompt("Third number:"));
 
+//+,-,*,/
+function handleClick(callback, operation) {
+  var number1 = parseFloat($("#number1").val());
+  var number2 = parseFloat($("#number2").val());
+  var result = callback(number1, number2);
+  $("#"+operation).html(result.toFixed(2)); //<#p>
+
+}
 function addition(number1, number2){return number1 + number2; };
 
 function subtraction(number1, number2) { return number1 - number2; };
 
 function multiplication(number1, number2) { return number1 * number2; };
 
-// function multiplication(number1, number2) { return number1 * number2; };
+function division(number1, number2) { return number1 / number2; };
 
 // function threeTimes(number1, number2, number3)
 // { return number1 * number2 * number3; }
 $("#additionButton").click(function(){
-    var number1 = parseFloat($("#number1").val());
-    var number2 = parseFloat($("#number2").val());
-
-    let additionResult = addition(number1, number2);
-
-    $("#addition").html(additionResult.toFixed(2));
+  handleClick(addition,"addition");
 });
 $("#subtractButton").click(function(){
-    var number1 = parseInt($("#number1").val());
-    var number2 = parseInt($("#number2").val());
-
-    let subtractionResult = subtraction(number1, number2);
-
-    $("#subtraction").html(subtractionResult);
+  handleClick(subtraction,"subtraction");
 });
 
 $("#multiplicationButton").click(function(){
-  var number1 = parseInt($("#number1").val());
-  var number2 = parseInt($("#number2").val());
-
-  let multiplicationResult = multiplication(number1, number2);
-
-  $("#multiplication").html(multiplicationResult);
+    handleClick(multiplication,"multiplication");
 });
 
 $("#divideButton").click(function(){
-  var number1 = parseInt($("#number1").val());
-  var number2 = parseInt($("#number2").val());
-
-  let divisionResult = (number1/number2);
-
-  $("#division").html(divisionResult);
+    handleClick(division,"division");
 });
 
 // const subtraction = alert("Please two numbers to subtract:")
