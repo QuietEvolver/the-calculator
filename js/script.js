@@ -8,6 +8,9 @@ $(document).ready(function(){
 function handleClick(callback, operation) {
   var number1 = parseFloat($("#number1").val());
   var number2 = parseFloat($("#number2").val());
+      if (Number.isNaN(number1)||Number.isNaN(number2)){
+        alert("Please enter a number.");
+      }
   var result = callback(number1, number2);
   $("#"+operation).html(result.toFixed(2)); //<#p>
 
